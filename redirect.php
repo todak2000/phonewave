@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>REDIRECT PAGE</title>
+    <title>SUMMARY PAGE</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="index_f.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Exo|Ubuntu" rel="stylesheet">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
-<body>
+<body style="font-family: 'Exo', sans-serif;">
     <div class="container">
+        <!-- REDIRECTION PAGE HEADER -->
         <div class="header btn-info" align="center" style="border-radius:5px; padding: 10px 0 10px 0;">
-            <h1>Phonewave Payment Confirmation</h1>
-            <p>A demo Payment Portal for Phonewave through Rave payment Gateway</p>
+             <h1 style="color: #232323; font-weight:1000; font-family: 'Ubuntu', sans-serif;">Phonewave Payment</h1>
+            <p style="color: #ccc; font-weight:500; font-family: 'Abel', sans-serif;" class="btn-danger">A demo Payment Portal for Phonewave through Rave payment Gateway</p>
         </div>
         
-
+<!-- PHP CODE STARTS HERE -->
         <?php
        
     if (isset($_GET['txref'])) {
@@ -54,35 +56,24 @@
         $chargeResponsecode = $resp['data']['chargecode'];
         $chargeAmount = $resp['data']['amount'];
         $chargeCurrency = $resp['data']['currency'];
-
-        // print_r($paymentStatus);
-        // print_r($chargeResponsecode.' '.$chargeAmount.' '.$chargeCurrency.' '.$currency);
         
         if(($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($chargeCurrency == $currency)) {
-          // transaction was successful...
-             // please check other things like whether you already gave value for this ref
-          // if the email matches the customer who owns the product etc
-          //Give Value and return to Success page
+          // FOR A SUCCESSFUL TRANSACTION, THE ABOVE CONDITIONS SUCH AS THE RESPONSE CODE AND CURRENCY IS CONFIRMED, IT ECHO A SUCCESFUL TRANSACTION
             echo('<div align="center" class="col-md-12" style="margin-top:20px;  border: 1px solid #ccc; border-radius:5px;" >
         <img src="images/ok.png" style="margin-top:20px;" width="200px" height:"200px">
-        <h4 style="margin-top:50px;">PAYMENT SUCCESSFUL. THANK YOU! <br> YOUR PHONE WILL BE DELEIVERED WITHIN 3- 7 DAYS FROM THIS CONFIRMATION</h4></div>');
+        <h4 style="margin-top:50px;">PAYMENT SUCCESSFUL. THANK YOU! <br> YOUR ITEM WILL BE DELEIVERED WITHIN 3- 7 DAYS FROM THIS CONFIRMATION</h4></div>');
         } 
         else {
-            //Dont Give Value and return to Failure page
+            //IF THE ABOVE CONDITION IS NOT MET, IT ECHO A FAILED TRANSACTION
              echo('<div align="center" class="col-md-12" style="margin-top:20px; border: 1px solid #ccc; border-radius:5px;" >
         <img src="images/failed.png" style="margin-top:20px;" width="200px" height:"200px">
         <h4 style="margin-top:50px;">FAILED TRANSACTION. PLEASE TRY AGAIN</h4></div>');
         }
     }
-        else {
-      echo('<div align="center" class="col-md-12" style="margin-top:20px; border: 1px solid #ccc; border-radius:5px;" >
-        <img src="images/ok.png" style="margin-top:20px;" width="200px" height:"200px">
-        <img src="images/failed.png" style="margin-top:20px;" width="200px" height:"200px">
-        <h4 style="margin-top:50px;">INCONCLUSIVE TRANSACTION. PLEASE TRY AGAIN</h4></div>');
-    }
-
+    
 ?>
-       
+<!-- PHP CODE ENDS HERE -->
+       <!-- FOOTER -->
        <footer style="margin-top:60%;">
             <div class="row">
                 <div class="col-lg-12">

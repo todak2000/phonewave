@@ -8,146 +8,121 @@
     <title>PHONEWAVE</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="index_f.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Exo|Ubuntu" rel="stylesheet">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="rave.js"></script>
 </head>
-<body>
-      <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header"
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-phone"></i><!-- <img src="logo.png"> --></a>
-            </div>
-            
-           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">SAMSUNG</a>
-                    </li>
-                    <li>
-                        <a href="#">HTC</a>
-                    </li>
-                    <li>
-                        <a href="#">IPHONE</a>
-                    </li>
-                    <li>
-                        <a href="#">NEXUS</a>
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
-        
-    </nav>
+<body style="font-family: 'Exo', sans-serif;">
+<!-- NAVIGATION HEADER -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	        <div class="container">
+	        	<!-- NAV TOGGLE ICON -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-phone"></i><!-- <img src="logo.png"> --></a>
+	            </div>
 
-    <!-- Page Content -->
+	            <!-- NAVIGATION ITEMS -->
+	           <div class="collapse navbar-collapse" id="menu" style="margin: 2px 5px 0 5px;">
+	                <ul class="nav navbar-nav" >
+	                    <li> <a href="#samsung">SAMSUNG</a></li>
+	                    <li><a href="#htc">HTC</a></li>
+	                    <li><a href="#iphone">IPHONE</a></li>
+	                    <li> <a href="#nexus">NEXUS</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+
+<!-- NAVIGATION HEADER ENDS -->
+    <!-- MAIN CONTENT STARTS HERE -->
+    	<!-- UPPER SECTION -->
     <div class="container">
-
-        <!-- Jumbotron Header -->
+        <!-- JUMBOTRON HEADER -->
         <header class="jumbotron hero-spacer">
+        	<!-- PHONEWAVE WRITEUP FOR LARGE SCREENS -->
+            <h1 style="margin-left:45px;font-weight: 1000; color: #ccc; font-family: 'Ubuntu', sans-serif; " class="hidden-xs hidden-sm">PHONEWAVE</h1>
+            <p style="margin-left:45px; font-family: 'Abel', sans-serif;" class="hidden-xs hidden-sm"><a href="#" class="btn btn-danger">Buy Phones you can be proud of</a></p>
+			<p style="margin-left:45px; font-family: 'Abel', sans-serif;" class="hidden-xs hidden-sm"><a href="#products" class="btn btn-primary btn-large">See Our Products!</a></p>
 
-            <h1 style="margin-left:45px;font-weight: 1000; color: #ccc; " class="hidden-xs hidden-sm">PHONEWAVE</h1>
-            <p style="margin-left:45px;" class="hidden-xs hidden-sm"><a href="#" class="btn btn-danger">Buy Phones you can be proud of</a></p>
-
-            <h2 align="center" class="hidden-lg hidden-md" style="margin-top: 100px; font-weight: 1000; color: #ccc;">PHONEWAVE</h2>
-            <p align="center" style="font-size:50%;" class="hidden-lg hidden-md"><a href="#" class="btn btn-danger">Buy Phones you can be proud of</a></p>
-
-            <p style="margin-left:45px" class="hidden-xs hidden-sm"><a href="#products" class="btn btn-primary btn-large">See Our Products!</a>
-            </p>
-
-            <p align="center" class="hidden-lg hidden-md" style="margin-top:100px;"><a href="#products" class="btn btn-primary">See Our Products!</a>
-            </p>
+           	<!-- PHONEWAVE WRITEUP FOR MEDIUM AND SMALL SCREENS -->
+            <h2 align="center" class="hidden-lg hidden-md" style="margin-top: 100px; font-weight: 1000; color: #ccc; font-family: 'Ubuntu', sans-serif;">PHONEWAVE</h2>
+            <p align="center" style="font-size:50%; font-family: 'Abel', sans-serif;" class="hidden-lg hidden-md"><a href="#" class="btn btn-danger">Buy Phones you can be proud of</a></p>
+            <p align="center" class="hidden-lg hidden-md" style="margin-top:100px; font-family: 'Abel', sans-serif;"><a href="#products" class="btn btn-primary">See Our Products!</a></p>
         </header>
-
         <hr>
 
-        <!-- Title -->
+        <!-- LOWER SECTION -->
         <div class="row">
             <div class="col-lg-12">
                 <h3>Top Products</h3>
             </div>
         </div>
       
-
-        <!-- Page Features -->
+        <!-- PRODUCTS CATALOGUE -->
         <div class="row text-center" id="products">
-
+        	<!-- NEXUS SEGMENT -->
             <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail" style="height:500px;">
+                <div class="thumbnail" style="height:500px;" id="nexus">
                     <img src="https://easetemplate.com/free-website-templates/mobistore/images/nexus.png" alt="" style="margin-top:50px;">
                     <img src="https://easetemplate.com/free-website-templates/mobistore/images/display_img_1.png" alt="">
                     <h4>Price: &#x20A6;30,000</h4>
                     <h5>ID: PH-001</h5>
-                    <div class="caption" style="margin-top:70px;">
-                    
+                    <div class="caption" style="margin-top:70px;">                  
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="order.php?id=PH-001" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        <p><a href="order.php?id=PH-001" class="btn btn-primary">Buy Now!</a> </p>
                     </div>
                 </div>
             </div>
-
+			<!-- IPHONE SEGMENT -->
             <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail" style="height:500px;">
+                <div class="thumbnail" style="height:500px;" id="iphone">
                     <img src="https://easetemplate.com/free-website-templates/mobistore/images/iphone.png" alt="" style="margin-top:30px;">
                     <img src="https://easetemplate.com/free-website-templates/mobistore/images/display_img_2.png" alt="" >
                     <h4>Price: &#x20A6;35,000</h4>
                     <h5>ID: PH-002</h5>
-                    <div class="caption" >
-                        
+                    <div class="caption" >                    
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="order.php?id=PH-002" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        <p><a href="order.php?id=PH-002" class="btn btn-primary">Buy Now!</a></p>
                     </div>
                 </div>
             </div>
-
+            <!-- SAMSUNG SEGMENT -->
             <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail" style="height:500px;">
+                <div class="thumbnail" style="height:500px;" id="samsung">
                     <img src="https://easetemplate.com/free-website-templates/mobistore/images/samsung.png" alt="" style="margin-top:40px;">
                     <img src="https://easetemplate.com/free-website-templates/mobistore/images/display_img_3.png" alt="">
                     <h4>Price: &#x20A6;40,000</h4>
                     <h5>ID: PH-003</h5>
-                    <div class="caption" style="margin-top:80px;">
-                       
+                    <div class="caption" style="margin-top:80px;">                       
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="order.php?id=PH-003" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        <p><a href="order.php?id=PH-003" class="btn btn-primary">Buy Now!</a></p>
                     </div>
                 </div>
             </div>
-
+			<!-- HTC SEGMENT -->
             <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail" style="height:500px;">
+                <div class="thumbnail" style="height:500px;" id="htc">
                     <img src="https://easetemplate.com/free-website-templates/mobistore/images/htc.png" alt="" style="margin-top:50px;">
                     <img src="https://easetemplate.com/free-website-templates/mobistore/images/display_img_4.png" alt="">
                     <h4>Price: &#x20A6;50,000</h4>
                     <h5>ID: PH-004</h5>
-                    <div class="caption" style="margin-top:80px;">
-                       
+                    <div class="caption" style="margin-top:80px;">                      
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="order.php?id=PH-004" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        <p><a href="order.php?id=PH-004" class="btn btn-primary">Buy Now!</a></p>
                     </div>
                 </div>
             </div>
-
         </div>
-    
-
+     <!-- PRODUCTS CATALOGUE ENDS HERE -->
         <hr>
-
-        <!-- Footer -->
+        <!-- FOOTER -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
@@ -155,8 +130,6 @@
                 </div>
             </div>
         </footer>
-    </div>
-    
-        
+    </div>      
 </body>
 </html>

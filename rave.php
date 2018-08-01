@@ -1,9 +1,8 @@
 <?php
 $curl = curl_init();
-//include 'order.php';
     $phone_name = $_POST["phoneName"];
     $email = $_POST["form_email"];
-     $total_amount = $_POST["totalPriceReal"];
+    $total_amount = $_POST["totalPriceReal"];
     $phone_name = $_POST["phoneName"];
     $ref_no = $_POST["ref"];
     $currency = "NGN";
@@ -35,23 +34,16 @@ $curl = curl_init();
     $err = curl_error($curl);
 
     if($err){
-      // there was an error contacting the rave API
       die('Curl returned error: ' . $err);
     }
 
     $transaction = json_decode($response);
 
     if(!$transaction->data && !$transaction->data->link){
-      // there was an error from the API
       print_r('API returned error: ' . $transaction->message);
     }
 
-    // uncomment out this line if you want to redirect the user to the payment page
-    // print_r($transaction->data->message);
-
-
     // redirect to page so User can pay
-    // uncomment this line to allow the user redirect to the payment page
     header('Location: ' . $transaction->data->link);
 ?>
 

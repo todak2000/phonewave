@@ -1,18 +1,31 @@
 $(document).ready(function(){
-
+	// ON CLICK OF THE NEXT BUTTON IN THE ORDER.PHP PAGE, 
+	// THE FIRST SET OF INFO CONTAINING PERSONAL DETAILS IS HIDDEN
+	// AND PURCHASE DETAILS IS UN-HIDDEN BY REMOVING THE hide_div CLASS INITIALLY ATTACHED
 	$('#next').click(function(){
 	$(".address").addClass("hide_div");
 	$(".payment").removeClass("hide_div");
 });
 
+	// ON CLICK OF THE PREVIOUS BUTTON IN THE ORDER.PHP PAGE, 
+	// AND PURCHASE DETAILS IS HIDDEN BY ADDING THE hide_div CLASS REMOVED FROM ONCLICK ON NEXT BUTTON
+	// THE FIRST SET OF INFO CONTAINING PERSONAL DETAILS IS UN-HIDDEN REMOVING THE hide_div CLASS INITIALLY ATTACHED
 	$('#previous').click(function(){
 	$(".address").removeClass("hide_div");
 	$(".payment").addClass("hide_div");
 });
+	// TO ENSURE EMAIL INPUTED IS POSTED ALONGSIDE OTHER DETAILS, 
+	// THE EMAIL INPUT TAG ID WAS TAKEN AND COPIED INTO A NEW 
+	// EMAIL INPUT TAG IN THE FORM TO THE POSTED TO THE SERVER. 
+	// HENCE ON INPUTING AN EMAIL ADDRESS IN THE PERSONAL DETAILS SECTION
+	// IT IS AUTOMATICALLY REPLICATED IN THE PURCHASE DETAILS SECTION
 	$('#email').change(function() {
     $('#form_email').val($(this).val());
 });
 
-
+// NAVBAR BUTTON TOGGLE FOR RESPONSIVENESS
+$('.navbar-toggle').click(function(){
+    		$('#menu').toggle();
+    	})
 });
 
