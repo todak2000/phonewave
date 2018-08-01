@@ -8,7 +8,7 @@ $curl = curl_init();
     $ref_no = $_POST["ref"];
     $currency = "NGN";
     $PBFPubKey = "FLWPUBK-db9f2868c66c267fc27e71a995b0b7e7-X";
-    $redirect_url = "https://whispering-thicket-48305.herokuapp.com/";
+    $redirect_url = "https://redirectionphonewave.herokuapp.com/";
 
 
     curl_setopt_array($curl, array(
