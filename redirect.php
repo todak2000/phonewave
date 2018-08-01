@@ -20,11 +20,9 @@
         
 
         <?php
-        include 'order.php';
+       
     if (isset($_GET['txref'])) {
         $ref = $_GET['txref'];
-        $amount = $_GET['totalPriceReal'];//Correct Amount from Server
-
         $currency = "NGN"; //Correct Currency from Server
 
         $query = array(
@@ -59,8 +57,7 @@
 
         // print_r($paymentStatus);
         print_r($chargeResponsecode.' '.$chargeAmount.' '.$chargeCurrency.' '.$currency);
-        die();
-        if(($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($chargeAmount == $amount)  && ($chargeCurrency == $currency)) {
+        if(($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($chargeCurrency == $currency)) {
           // transaction was successful...
              // please check other things like whether you already gave value for this ref
           // if the email matches the customer who owns the product etc
