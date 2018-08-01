@@ -230,7 +230,7 @@
                                     </li>
                                 </ul>
                                 <br/>
-                                <input type="submit" class="btn btn-success btn-lg btn-block" value = "PAY">          
+                                <input type="submit" class="btn btn-success btn-lg btn-block" id="pay_buttton" value = "PAY">          
                     </form>
                     <div class="form-group" style="margin-top:50px;">
                     <div align="center">

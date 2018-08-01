@@ -12,4 +12,7 @@ $(document).ready(function(){
 	$('#email').change(function() {
     $('#form_email').val($(this).val());
 });
-})
+
+
+});
+
