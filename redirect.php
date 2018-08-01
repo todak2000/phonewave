@@ -24,7 +24,7 @@
         $ref = $_GET['txref'];
         $amount = $_GET["totalPriceReal"]
         echo $amount; //Correct Amount from Server
-        die();
+        
         $currency = "NGN"; //Correct Currency from Server
 
         $query = array(
