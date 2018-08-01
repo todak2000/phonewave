@@ -58,7 +58,7 @@
         $chargeCurrency = $resp['data']['currency'];
 
         // print_r($paymentStatus);
-        print_r($chargeResponsecode.' '.$chargeAmount.' '.$amount.' '.$chargeCurrency.' '.$currency);
+        print_r($chargeResponsecode.' '.$chargeAmount.' '.$chargeCurrency.' '.$currency);
         die();
         if(($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($chargeAmount == $amount)  && ($chargeCurrency == $currency)) {
           // transaction was successful...
