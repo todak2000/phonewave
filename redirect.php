@@ -13,8 +13,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="header btn-warning" align="center">
-            <h1><a href="index_f.html">Phonewave Payment Confirmation</a></h1>
+        <div class="header btn-info" align="center" style="border-radius:5px; padding: 10px 0 10px 0;">
+            <h1>Phonewave Payment Confirmation</h1>
             <p>A demo Payment Portal for Phonewave through Rave payment Gateway</p>
         </div>
         
@@ -62,6 +62,7 @@
              // please check other things like whether you already gave value for this ref
           // if the email matches the customer who owns the product etc
           //Give Value and return to Success page
+    }
             echo("<h3>PAYMENT SUCCESSFUL. THANK YOU! YOUR PHONE WILL BE DELEIVERED WITHIN 3- 7 DAYS FROM THIS CONFIRMATION</h3>");
         } 
         else {
@@ -74,7 +75,14 @@
     }
 
 ?>
-       <a href="index_f.html"> <h1 class="btn-info"> Home</h1></a>
+       <a href="index.html" class="btn-default"> <h1 > Home</h1></a>
+        <footer style="margin-top:60%;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p align="center">Copyright © phonewave 2018</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
