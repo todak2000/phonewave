@@ -15,7 +15,7 @@
 <body style="font-family: 'Exo', sans-serif;">
     <div class="container">
         <!-- REDIRECTION PAGE HEADER -->
-        <div class="header btn-info" align="center" style="border-radius:5px; padding: 10px 0 10px 0;">
+        <div class="header btn-info" align="center" style="border-radius:5px; padding: 10px 0 10px 0; cursor:default; pointer-events: none;">
              <h1 style="color: #232323; font-weight:1000; font-family: 'Ubuntu', sans-serif;">Phonewave Payment</h1>
             <p style="color: #ccc; font-weight:500; font-family: 'Abel', sans-serif;" class="btn-danger">A demo Payment Portal for Phonewave through Rave payment Gateway</p>
         </div>
