@@ -22,7 +22,9 @@
         <?php
     if (isset($_GET['txref'])) {
         $ref = $_GET['txref'];
-        $amount = $_GET["totalPriceReal"];; //Correct Amount from Server
+        $amount = $_GET["totalPriceReal"]
+        echo $amount; //Correct Amount from Server
+        die();
         $currency = "NGN"; //Correct Currency from Server
 
         $query = array(
