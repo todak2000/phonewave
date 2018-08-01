@@ -63,11 +63,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="header btn-warning" align="center">
+        <div class="header btn-info" align="center" style="border-radius:5px; padding: 10px 0 10px 0;">
             <h1><a href="index_f.html">Phonewave Payment</a></h1>
             <p>A demo Payment Portal for Phonewave through Rave payment Gateway</p>
         </div>
-        <div class="row address">
+        <div class="row address" style="margin-top: 20px;">
              <!-- <div class="col-md-"></div> -->
             <div class="col-md-8 col-sm-offset-2">
               <form class="form-horizontal " role="form" action="" method="GET">
@@ -150,7 +150,7 @@
               <div class="form-group">
                     <div align="center">
                       <div class="pull-center">
-                        <a href="index_f.html"><div  class="btn btn-default">Cancel</div></a>
+                        <a href="index.html"><div  class="btn btn-default">Cancel</div></a>
                         <div  class="btn btn-primary" id="next">Next</div>
                       </div>
                     </div>
