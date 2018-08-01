@@ -56,7 +56,7 @@
         $chargeCurrency = $resp['data']['currency'];
 
         // print_r($paymentStatus);
-        print_r($chargeResponsecode.' '.$chargeAmount.' '.$chargeCurrency.' '.$currency);
+        // print_r($chargeResponsecode.' '.$chargeAmount.' '.$chargeCurrency.' '.$currency);
         
         if(($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($chargeCurrency == $currency)) {
           // transaction was successful...
@@ -65,20 +65,20 @@
           //Give Value and return to Success page
             echo('<div align="center" class="col-md-12" style="margin-top:20px;  border: 1px solid #ccc; border-radius:5px;" >
         <img src="images/ok.png" style="margin-top:20px;" width="200px" height:"200px">
-        <h5 style="margin-top:50px;">PAYMENT SUCCESSFUL. THANK YOU! <br> YOUR PHONE WILL BE DELEIVERED WITHIN 3- 7 DAYS FROM THIS CONFIRMATION</h5></div>');
+        <h4 style="margin-top:50px;">PAYMENT SUCCESSFUL. THANK YOU! <br> YOUR PHONE WILL BE DELEIVERED WITHIN 3- 7 DAYS FROM THIS CONFIRMATION</h4></div>');
         } 
         else {
             //Dont Give Value and return to Failure page
              echo('<div align="center" class="col-md-12" style="margin-top:20px; border: 1px solid #ccc; border-radius:5px;" >
         <img src="images/failed.png" style="margin-top:20px;" width="200px" height:"200px">
-        <h5 style="margin-top:50px;">FAILED TRANSACTION. PLEASE TRY AGAIN</h5></div>');
+        <h4 style="margin-top:50px;">FAILED TRANSACTION. PLEASE TRY AGAIN</h4></div>');
         }
     }
         else {
       echo('<div align="center" class="col-md-12" style="margin-top:20px; border: 1px solid #ccc; border-radius:5px;" >
         <img src="images/ok.png" style="margin-top:20px;" width="200px" height:"200px">
         <img src="images/failed.png" style="margin-top:20px;" width="200px" height:"200px">
-        <h5 style="margin-top:50px;">INCONCLUSIVE TRANSACTION. PLEASE TRY AGAIN</h5></div>');
+        <h4 style="margin-top:50px;">INCONCLUSIVE TRANSACTION. PLEASE TRY AGAIN</h4></div>');
     }
 
 ?>
