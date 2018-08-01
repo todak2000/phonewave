@@ -55,7 +55,8 @@
         $chargeAmount = $resp['data']['amount'];
         $chargeCurrency = $resp['data']['currency'];
 
-        print_r($response);
+        print_r($paymentStatus);
+        die();
         if(($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($chargeAmount == $amount)  && ($chargeCurrency == $currency)) {
           // transaction was successful...
              // please check other things like whether you already gave value for this ref
